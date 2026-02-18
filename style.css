@@ -1,0 +1,297 @@
+body{
+
+  margin:0;
+
+  font-family:Segoe UI, sans-serif;
+
+  background:black;
+
+  overflow:hidden;
+
+  color:white;
+
+}
+
+/* Pages */
+
+.page{
+
+  position:fixed;
+
+  width:100%;
+
+  height:100%;
+
+}
+
+/* Sky */
+
+.sky{
+
+  position:fixed;
+
+  width:100%;
+
+  height:100%;
+
+  background:black;
+
+}
+
+/* Fireflies */
+
+.firefly{
+
+  position:absolute;
+
+  width:6px;
+
+  height:6px;
+
+  background:#ffff88;
+
+  border-radius:50%;
+
+  box-shadow:0 0 15px #ffff88;
+
+  animation:fly 6s linear infinite;
+
+}
+
+@keyframes fly{
+
+  from{ transform:translateY(0); }
+
+  to{ transform:translateY(-300px); }
+
+}
+
+/* Garden */
+
+.garden{
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  align-items:center;
+
+  height:100vh;
+
+}
+
+.flowers{
+
+  display:flex;
+
+  gap:40px;
+
+  margin:40px;
+
+}
+
+.flower{
+
+  width:60px;
+
+  height:60px;
+
+  border-radius:50%;
+
+  background:linear-gradient(45deg,#ff4d6d,#ffd166);
+
+  box-shadow:0 0 20px #ff4d6d;
+
+  cursor:pointer;
+
+  transition:0.5s;
+
+}
+
+.bloom{
+
+  transform:scale(1.8);
+
+  box-shadow:0 0 60px #ffd166;
+
+}
+
+#startBtn{
+
+  padding:15px 35px;
+
+  border:none;
+
+  border-radius:30px;
+
+  background:linear-gradient(45deg,#ff4d6d,#ffd166);
+
+  color:white;
+
+  font-size:18px;
+
+  cursor:pointer;
+
+}
+
+/* Question */
+
+.questionBox{
+
+  position:fixed;
+
+  top:50%;
+
+  left:50%;
+
+  transform:translate(-50%,-50%);
+
+  background:rgba(0,0,0,0.9);
+
+  padding:40px;
+
+  border-radius:20px;
+
+  z-index:5;
+
+}
+
+.btnGroup button{
+
+  margin:10px;
+
+  padding:12px 25px;
+
+  border:none;
+
+  border-radius:20px;
+
+  font-size:16px;
+
+  cursor:pointer;
+
+}
+
+/* Envelope */
+
+.envelopeScreen{
+
+  position:fixed;
+
+  width:100%;
+
+  height:100%;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  background:#020024;
+
+  z-index:10;
+
+}
+
+.envelope{
+
+  width:200px;
+
+  height:120px;
+
+  background:#ff4d6d;
+
+  position:relative;
+
+  cursor:pointer;
+
+}
+
+.flap{
+
+  position:absolute;
+
+  width:100%;
+
+  height:100%;
+
+  background:#ff758f;
+
+  transform-origin:top;
+
+  transition:1s;
+
+}
+
+.envelope.open .flap{
+
+  transform:rotateX(180deg);
+
+}
+
+/* Final Website */
+
+.finalPage{
+
+  position:fixed;
+
+  width:100%;
+
+  height:100%;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  background:radial-gradient(circle,#020024,#090979,#000);
+
+}
+
+.websiteBox{
+
+  width:600px;
+
+  background:white;
+
+  color:black;
+
+  padding:50px;
+
+  border-radius:20px;
+
+  text-align:center;
+
+  font-size:22px;
+
+}
+
+/* Hearts */
+
+.heart{
+
+  position:absolute;
+
+  color:#ff4d6d;
+
+  animation:fall linear forwards;
+
+}
+
+@keyframes fall{
+
+  from{ transform:translateY(-50px); }
+
+  to{ transform:translateY(100vh); opacity:0; }
+
+}
+
+.hidden{
+
+  display:none;
+
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Magic Garden Ultra</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="sky"></div>
+
+<div class="fireflies" id="fireflies"></div>
+
+<!-- Garden Page -->
+
+<div class="garden page" id="gardenSection">
+
+  <h1>🌸 A Precious Promise 🌸</h1>
+
+  <div class="flowers">
+
+    <div class="flower" onclick="bloom(this)"></div>
+
+    <div class="flower" onclick="bloom(this)"></div>
+
+    <div class="flower" onclick="bloom(this)"></div>
+
+    <div class="flower" onclick="bloom(this)"></div>
+
+  </div>
+
+  <button id="startBtn">Click Here 🌸</button>
+
+</div>
+
+<!-- Question -->
+
+<div class="questionBox hidden" id="questionBox">
+
+  <h2>Are you important for me?</h2>
+
+  <div class="btnGroup">
+
+    <button id="yesBtn">Yes 💖</button>
+
+    <button id="noBtn">No 🙂</button>
+
+  </div>
+
+</div>
+
+<!-- Envelope Screen -->
+
+<div class="envelopeScreen hidden" id="envelopeScreen">
+
+  <div class="envelope" id="envelope">
+
+    <div class="flap"></div>
+
+    <div class="letter">💌</div>
+
+  </div>
+
+</div>
+
+<!-- Final Website Page -->
+
+<div class="finalPage hidden" id="finalPage">
+
+  <div class="heartContainer" id="heartContainer"></div>
+
+  <div class="websiteBox">
+
+    <h1>💖 A Message For You</h1>
+
+    <p id="typedText"></p>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
